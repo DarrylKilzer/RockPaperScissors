@@ -33,13 +33,12 @@ function computerSelection() {
 }
 
 function compareChoices() {
-  if (userChoice === 'rock' && computerChoice === 'scissors'
+  if (userChoice == computerChoice) {
+    results = 'Tie';
+  }else if (userChoice === 'rock' && computerChoice === 'scissors'
     || userChoice === 'paper' && computerChoice === 'rock'
     || userChoice === 'scissors' && computerChoice === 'paper') {
-
     results = 'Win';
-  } else if (userChoice == computerChoice) {
-    results = 'Tie';
   } else {
     results = "lose"
   }
